@@ -28,14 +28,19 @@ The script:
 ### Flags
 
 -d  backs up database
+    
     --host=[ host ]
+    
     --dbn= [ database name ]
+   
     --user=[ database user ]
+    
     --pass=[ database password ]
 
 -f  backs up drupal core files
 
 -u  downloads and upgrades based on the version requested
+    
     --ver=[ 8.x.x ]
     
 
