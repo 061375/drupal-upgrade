@@ -30,11 +30,12 @@ class Backup {
         
         if(false !== $er)die("\none or more database connection fields are missing\n");
         
-        echo "\npurging previous backup...\n";
+        echo "\npurging previous backup of database...\n";
         @unlink($backfolder.'/'.$dbn.'.sql');
         
         echo "\nbacking up database...\n";
-        echo shell_exec('mysqldump -u '.$user.' -p'.$pass.' -h '.$host.' '.$dbn.' > '.$backfolder.'/'.$dbn.'.sql');
+        $cmd = 'mysqldump -u '.$user.' -p'.$pass.' -h '.$host.' '.$dbn.' > '.$backfolder.'/'.$dbn.'.sql';
+        echo shell_exec($cmd);
     }
     /**
      * files

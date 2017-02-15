@@ -30,17 +30,21 @@ use \Libraries\CMD;
 CMD::runall(
     array(
         array(
-            'name'=>'backup',
-            'flag'=>'d'
-        ),
-        array(
-            'name'=>'backup',
-            'flag'=>'f',
+            'name'=>'backup_database',
+            'flag'=>'d',
             'vars'=>array(
                 '--host=',
                 '--dbn=',
                 '--user=',
-                '--pass='
+                '--pass=',
+                '--ver='
+            )
+        ),
+        array(
+            'name'=>'backup_files',
+            'flag'=>'f',
+            'vars'=>array(
+                '--ver='
             )
         ),
         array(
