@@ -1,0 +1,5 @@
+    # where to backup the installation to
+backfolder:
+    # build an array like the example below to exclude files from the operation
+    # ['this.php','is.md','an.php','example.txt']
+exclude:
