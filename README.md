@@ -21,6 +21,14 @@ The script:
 
 ## Usage
 
+### Config
+
+config/app.yml
+
+* optional - set a backup folder path
+
+backfolder: /path/to/my/backup
+
 ``` cd /path/to/my/drupal/project ```
 
 ``` php /path/to/drupal-upgrade/upgrade.php -dfu --host=localhost --dbn=drp_uptest --user=drp_uptest --pass=abc1234 --ver=8.2.6 ```
