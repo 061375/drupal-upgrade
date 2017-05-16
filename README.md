@@ -19,6 +19,10 @@ The script:
 
 4. replaces the core files
 
+## TODO
+
+```--pass=``` is an insecure way to add the password as it will appear in the .bash_history
+
 ## Usage
 
 ### Config
