@@ -39,6 +39,20 @@ backfolder: /path/to/my/backup
 
 ``` php /path/to/drupal-upgrade/upgrade.php -dfu --host=localhost --dbn=drp_uptest --user=drp_uptest --pass=abc1234 --ver=8.2.6 ```
 
+### Bash Function Example (to make things easier )
+
+```
+function upfunc()
+{
+  cd /var/www/vhosts/mywebsite
+  php /path/to/scripts/drupal-upgrade/upgrade.php $1 --host=localhost --dbn=drp_uptest --user=drp_uptest --pass=abc1234 --ver=$2
+}
+```
+
+Example:
+
+``` # upfunc -dfu 8.1.2 ```
+
 ### Flags
 
 -d  backs up database
